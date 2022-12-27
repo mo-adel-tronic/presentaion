@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn-danger {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #e74c3c;
+  --bs-btn-border-color: #e74c3c;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #bb2d3b;
+  --bs-btn-hover-border-color: #b02a37;
+  --bs-btn-focus-shadow-rgb: 225,83,97;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #b02a37;
+  --bs-btn-active-border-color: #a52834;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #e74c3c;
+  --bs-btn-disabled-border-color: #e74c3c;
+}
+
+#mainPage {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.7);
+}
+
+.collapsing {
+  transition-delay: 1s;
+  visibility: visible;
+}
+
+#container {
+  position: relative;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+#container main {
+  background-color: rgba(200, 200, 200, 0.4);
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-right: 1em;
+  padding-left: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+#container main .content-box {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-between;
+  min-height: 70%;
+  width: 100%;
+}
+#container main .content-box button {
+  transition-property: width, transform;
+  transition-duration: 1s;
+  transform: scale(1);
+  width: 90%;
+  padding: 1em;
+  margin-bottom: 2em;
+  text-transform: capitalize;
+  text-align: center;
+}
+#container main .content-box article.article-data {
+  position: relative;
+  width: 100%;
+}
+#container main .content-box article.article-data .article-content {
+  background-color: #fff;
+  margin-bottom: 1em;
+  border-left: 8px solid #b02a37;
+}
+#container main .content-box article.article-data .article-content h3 {
+  background-color: #b02a37;
+  color: #fff;
+  padding: 1em;
+}
+#container main .content-box article.article-data .article-content h4 {
+  color: #b02a37;
+}
+
+@media screen and (min-width: 768px) {
+  #container main {
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #container main .content-box button {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 950px) {
+  #container main {
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #container main .content-box button {
+    width: 30%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
